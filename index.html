@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reconhecimento de Estudantes - WIT</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        header {
+            background-color: #1E3A52;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+        footer {
+            background-color: #1E3A52;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+        main {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        video {
+            max-width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Reconhecimento de Estudantes - WIT</h1>
+    </header>
+
+    <main>
+        <p>Aluno identificado: <span id="identifiedStudent"></span></p>
+        <video id="cameraFeed" autoplay playsinline></video>
+    </main>
+
+    <footer>
+        Núcleo WIT - Resolução Inovadora de Problemas.
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@2.0.0/dist/teachablemachine.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
